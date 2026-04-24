@@ -1,5 +1,7 @@
 FROM node:22-slim
 
+ARG CACHEBUST=1
+
 RUN apt-get update && apt-get install -y \
     lilypond \
     --no-install-recommends \
