@@ -1,0 +1,18 @@
+{
+  "name": "harmonia-lilypond-service",
+  "version": "1.0.0",
+  "description": "Microservice de rendu LilyPond pour Harmonia",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev":   "node --watch src/server.js",
+    "test":  "node test/render.test.js"
+  },
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.3.1",
+    "helmet": "^7.1.0"
+  }
+}
